@@ -1,0 +1,12 @@
+id: LH-INFO-001
+title: Laravel framework detected
+severity: info
+status: observed
+confidence: 90
+description: The response contains multiple indicators consistent with a Laravel application.
+when:
+  laravel_detected: true
+  min_laravel_confidence: 35
+recommendation: Keep the framework and first-party packages supported and patched. Continue with authorized application-layer testing.
+references:
+  - https://laravel.com/docs

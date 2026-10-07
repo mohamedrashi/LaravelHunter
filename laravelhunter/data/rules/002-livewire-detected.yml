@@ -1,0 +1,12 @@
+id: LH-INFO-002
+title: Livewire component detected
+severity: info
+status: observed
+confidence: 85
+description: Livewire-specific client-side markers were identified in the response.
+when:
+  laravel_detected: true
+  component: Livewire
+recommendation: Include Livewire request validation, authorization, component exposure, and package advisories in the authorized test plan.
+references:
+  - https://livewire.laravel.com/docs

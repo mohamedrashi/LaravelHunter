@@ -1,0 +1,14 @@
+id: GHSA-crmm-hgp2-wgrp
+title: Temporary Signed URL Path Confusion
+severity: medium
+package: laravel/framework
+affected:
+  - ">=13.0.0,<13.12.0"
+  - "<12.61.1"
+patched:
+  - "12.61.1"
+  - "13.12.0"
+prerequisites:
+  - Application uses temporary signed URLs with the local filesystem driver.
+references:
+  - https://github.com/laravel/framework/security/advisories/GHSA-crmm-hgp2-wgrp

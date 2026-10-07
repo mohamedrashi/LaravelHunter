@@ -1,0 +1,16 @@
+id: GHSA-jh5r-qr3c-85q8
+cve: CVE-2026-102279
+title: XSS in Debug Page Information
+severity: low
+package: laravel/framework
+affected:
+  - ">=13.0.0,<13.30.0"
+  - "<12.69.0"
+patched:
+  - "12.69.0"
+  - "13.30.0"
+prerequisites:
+  - APP_DEBUG is enabled.
+  - Attacker-controlled input reaches affected debug-page tooltip content.
+references:
+  - https://github.com/laravel/framework/security/advisories/GHSA-jh5r-qr3c-85q8

@@ -1,0 +1,15 @@
+id: GHSA-5vg9-5847-vvmq
+cve: CVE-2026-48019
+title: CRLF injection in default email rule
+severity: high
+package: laravel/framework
+affected:
+  - ">=13.0.0,<=13.9.0"
+  - "<12.60.0"
+patched:
+  - "12.60.0"
+  - "13.10.0"
+prerequisites:
+  - Application sends mail to user-supplied email addresses through an affected validation/mail flow.
+references:
+  - https://github.com/laravel/framework/security/advisories/GHSA-5vg9-5847-vvmq

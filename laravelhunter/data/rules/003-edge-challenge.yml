@@ -1,0 +1,9 @@
+id: LH-EDGE-001
+title: Edge security challenge affects scan visibility
+severity: info
+status: inconclusive
+confidence: 95
+description: An edge challenge or interstitial was detected. Origin behavior may not have been observable from this request.
+when:
+  edge_challenge: true
+recommendation: Treat blocked checks as inconclusive. For authorized assessments, test through an approved allowlist, staging environment, or origin-access path rather than attempting automatic WAF bypass.
